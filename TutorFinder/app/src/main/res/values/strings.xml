@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tutor Finder</string>
+    <string name="button">Go</string>
+    <string name="main_content">This is the information</string>
+
+    <string-array name="module_list">
+        <item>CSC-20019</item>
+        <item>CSC-20021</item>
+        <item>CSC-20037</item>
+        <item>CSC-20038</item>
+    </string-array>
+
+</resources>
