@@ -1,6 +1,7 @@
 package com.copping.james.tutorfinder;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
@@ -16,8 +17,6 @@ public class MainActivity extends Activity {
     }
 
 
-
-
     public void onClickGo(View view) {
         TextView tutor_info_textView = (TextView) findViewById(R.id.tutor_info_textView);
         Spinner module_spinner = (Spinner) findViewById(R.id.module_spinner);
@@ -25,4 +24,17 @@ public class MainActivity extends Activity {
         String tutor_information = TutorFinder.getInfo(module_selected);
         tutor_info_textView.setText(tutor_information);
     }
+
+    public void onClickExtra(View view){
+        Intent intent = new Intent(this, Details.class);
+
+        Spinner module_spinner = (Spinner) findViewById(R.id.module_spinner);
+
+        String module_selected = String.valueOf(module_spinner.getSelectedItem());
+
+        intent.putExtra("module", module_selected);
+
+        startActivity(intent);
+    }
+
 }

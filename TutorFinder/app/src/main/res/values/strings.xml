@@ -2,7 +2,7 @@
     <string name="app_name">Tutor Finder</string>
     <string name="buttonGo">Go</string>
     <string name="tutor_info_text">No content had been selected</string>
-
+    <string name="buttonDetails">Extra Details</string>
     <string-array name="module_list">
         <item>CHE-20019</item>
         <item>CSC-20021</item>
