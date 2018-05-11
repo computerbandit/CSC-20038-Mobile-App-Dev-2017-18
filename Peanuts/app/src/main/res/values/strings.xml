@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Peanuts</string>
+    <string-array name="main_options">
+        <item>Characters</item>
+        <item>Comic Strips</item>
+        <item>Videos</item>
+    </string-array>
+</resources>
